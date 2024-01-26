@@ -2,7 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ul li { list-style-type: none; }
 
 #container {
     display: flex;
@@ -33,12 +43,50 @@ section:hover {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 1em;
 }
 
 span {
     font-size: 0.8rem;
+}
+
+/* ****Modal***** */
+
+.modalBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal {
+    width: 90%;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.modal > img {
+    width: 250px;
+}
+button {
+    all: unset;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #5f5fc7;
+    color: white;
+    padding: 4px 8px;
 }
 
 
@@ -52,5 +100,9 @@ span {
     section { width: 250px; }
 
     span { font-size: 1rem; }
+}
+
+@media only screen and (min-width: 700px) {
+    .modal { width: 700px; }
 }
 
