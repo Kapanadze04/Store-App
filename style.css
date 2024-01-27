@@ -6,21 +6,23 @@
     font-weight: 300;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
+
+/* General Classes */
 
 ul li { list-style-type: none; }
 
-#container {
+.flex { display: flex; }
+
+.flexCenter {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
 }
 
+
+
+
+/* Home Page Styling */
 
 h1 {
     font-size: 1rem;
@@ -28,6 +30,11 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+#container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 section {
     width: 150px;
@@ -47,18 +54,14 @@ img {
     margin-bottom: 1em;
 }
 
-span {
-    font-size: 0.8rem;
-}
+span { font-size: 0.8rem; }
 
-/* ****Modal***** */
 
-.modalBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
+
+
+/* Modal Styling */
+
+.modalBox { display: none; }
 
 .modal {
     width: 90%;
@@ -76,9 +79,9 @@ ul {
     gap: 6px;
 }
 
-.modal > img {
-    width: 250px;
-}
+.modal > img { width: 250px; }
+
+
 button {
     all: unset;
     margin-top: 0.5rem;
@@ -90,23 +93,25 @@ button {
 }
 
 
-/* deleted */
+
+
+/* Deleted Products Styling */
 
 
 #deleted-box {
-    display: flex;
     flex-direction: column;
     display: none;
 }
 
 .deleted-list {
-    display: flex;
     align-items: center;
     gap: 0.5em;
 }
 
 
-/* ******************** */
+
+
+/* Media Queries */
 
 @media only screen and (min-width: 650px) {
     
