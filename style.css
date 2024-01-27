@@ -90,6 +90,21 @@ button {
 }
 
 
+/* deleted */
+
+
+#deleted-box {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.deleted-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
 
 /* ******************** */
 
